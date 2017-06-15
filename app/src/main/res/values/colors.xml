@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#025BD7</color>
+    <color name="colorPrimaryDark">#025BD7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="act_main_item_text_color">#505355</color>
+    <color name="header_button_text_color">#e5e9ec</color>
+
+    <!-- 大面积背景色 -->
+    <color name="content_bg_blue">#ffe6f0fe</color>
+    <color name="content_bg_green">#ffeaeaea</color>
+    <color name="content_bg_gray">#ffeaeaea</color>
+    <color name="dark_gray_line">#ffdddddd</color>
+
+    <!-- 文字颜色 -->
+    <color name="dark_gray_text_color">#ff555555</color>
+    <color name="light_gray_text_color">#ffdddddd</color>
+    <color name="blue_text_color">#ff3280ED</color>
+    <color name="black_text_color">#ff08172B</color>
+    <color name="gray_text_color">#ff999999</color>
+    <color name="red_text_color">#FFFF4D4D</color>
+    <color name="pink_text_color">#ffff5073</color>
+    <color name="white_text_color">#ffffffff</color>
+    <color name="magenta_text_color">#ffff0097</color>
+    <color name="red_orange_text_color">#ffd54d34</color>
+    <color name="marine_text_color">#ff034888</color>
+
+    <!-- 按钮点击和未点击的颜色 -->
+    <color name="blue_bg_login_button_unpressed">#ff3280ed</color>
+    <color name="blue_bg_login_button_pressed">#ffdd0000</color>
+
+    <!-- 按钮点击和未点击的颜色 -->
+    <color name="pink_bg_login_button_unpressed">#ffff87a0</color>
+    <color name="pink_bg_login_button_pressed">#ffff5073</color>
+
+    <!-- 上面标题栏的点击和未点击背景色变化 -->
+    <color name="bg_titlebar_button_unpressed">#00000000</color>
+    <color name="bg_titlebar_button_pressed">#00000000</color>
+
+    <color name="bg_white">#ffffffff</color>
+    <color name="bg_red">#FFe51400</color>
+
+    <color name="bg_orange">#fff09609</color>
+    <color name="bg_dark_orange">#ffc97e09</color>
+
+    <color name="bg_brown">#ff994c11</color>
+    <color name="bg_magenta">#ffff0097</color>
+
+    <color name="bg_teal">#ff028b89</color>
+    <color name="bg_dark_teal">#ff4eb3b9</color>
+
+    <color name="bg_red_orange">#ffd54d34</color>
+    <color name="bg_lime">#ff8cbf26</color>
+
+    <color name="bg_blue">#ff1ba1e2</color>
+    <color name="bg_marine">#ff034888</color>
+    <color name="bg_dark_blue">#ff034888</color>
+
+    <color name="bg_pink">#fff65f7e</color>
+    <color name="bg_dark_pink">#ffae3e55</color>
+
+    <color name="bg_purple">#ff6e155e</color>
+    <color name="bg_light_purple">#ff5859b9</color>
+    <color name="bg_dark_purple">#ff260930</color>
+
+    <color name="bg_green">#ff339933</color>
+    <color name="bg_dark_green">#ff20793e</color>
+
+    <color name="bg_yellow">#ffffcc33</color>
+    <color name="bg_dark_yellow">#ffcba229</color>
+
+    <color name="bg_gray">#ff94969f</color>
+    <color name="bg_dark_gray">#ff383b42</color>
+
+
+    <color name="blue_41bbcf">#41bbcf</color>
+    <color name="grey_bbb">#bbb</color>
+    <color name="grey_ccc">#ccc</color>
+    <color name="grey_999">#999</color>
+    <color name="black_333">#333</color>
+    <color name="black_000">#000</color>
+    <color name="white_f9">#f9f9f9</color>
+    <color name="white_fff">#fff</color>
+    <color name="white_ecf8fa">#ecf8fa</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="red_e12d2d">#e12d2d</color>
+
+
+    <color name="gray_f3f3f3">#f3f3f3</color>
+    <color name="gray_d3d3d3">#d3d3d3</color>
+    <color name="gray_bbb">#bbb</color>
+    <color name="black_444">#444</color>
+
+    <color name="blue_148af6">#148af6</color>
+    <color name="green_2CB200">#2CB200</color>
+
+
+
+
+</resources>

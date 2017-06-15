@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">供货商版</string>
+
+    <string name="txt_sjhm">手机号码</string>
+    <string name="txt_fsyzm">发送验证码</string>
+    <string name="txt_yzm">验证码</string>
+    <string name="txt_input_password">输入密码</string>
+    <string name="txt_input_phone">输入手机号</string>
+    <string name="txt_forget_password">忘记密码？</string>
+    <string name="txt_dl">登录</string>
+    <string name="txt_user">用户</string>
+    <string name="txt_enterprise">企业</string>
+    <string name="txt_tjgrzl">添加个人资料</string>
+    <string name="txt_grzl">个人资料</string>
+    <string name="txt_lygj">零元购机</string>
+    <string name="txt_srcxxx">请输入公司、姓名或手机号查询</string>
+    <string name="txt_cx">查询</string>
+    <string name="txt_tcxz">套餐选择</string>
+    <string name="txt_xzyh">新增用户</string>
+    <string name="txt_xzgs">新增企业</string>
+    <string name="text_cxfk">重新风控</string>
+    <string name="txt_fkjg">风控结果</string>
+    <string name="txt_fkxy">征信协议</string>
+    <string name="txt_tjfk">提交风控</string>
+    <string name="txt_cxsm">重新扫描</string>
+    <string name="txt_next">下一步</string>
+    <string name="txt_new_user">新增用户</string>
+    <string name="txt_sfzh">身份证号</string>
+    <string name="txt_fksb">风控失败</string>
+    <string name="txt_fktg">风控通过</string>
+    <string name="txt_smjg">扫描结果</string>
+    <string name="txt_imei">IMEI码</string>
+    <string name="txt_jqxh">机器型号</string>
+    <string name="txt_jqzt">机器状态</string>
+    <string name="txt_smsfz">扫描身份证</string>
+    <string name="txt_name">姓名</string>
+    <string name="txt_sex">性别</string>
+    <string name="txt_nation">民族</string>
+    <string name="txt_birthday">出生年月</string>
+    <string name="txt_address">住址</string>
+    <string name="txt_qfjg">签发机关</string>
+    <string name="txt_yxrq">有效日期</string>
+    <string name="txt_phone">手机号码</string>
+    <string name="txt_company">所属公司</string>
+    <string name="txt_company_name">公司名称</string>
+    <string name="txt_enterprise_legal">企业法人</string>
+    <string name="txt_tcsj">套餐手机</string>
+    <string name="txt_tc">套餐</string>
+    <string name="txt_sjxh">手机型号</string>
+    <string name="txt_state">状态</string>
+    <string name="txt_pjstate">派机状态</string>
+    <string name="txt_pjsm">派机扫码</string>
+    <string name="txt_choose">选择</string>
+    <string name="txt_confirm">确定</string>
+
+
+    <string name="txt_qsrsjh">请输入手机号</string>
+    <string name="txt_qsryzm">请输入验证码</string>
+    <string name="txt_qsrxmm">请输入新登录密码,6-12位数字或字母</string>
+    <string name="txt_cfsrmm">重复上面输入的密码</string>
+    <string name="txt_hqyzm">获取验证码</string>
+    <string name="txt_xxht">线下合同</string>
+
+
+
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+
+
+
+</resources>

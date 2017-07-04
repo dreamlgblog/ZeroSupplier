@@ -19,8 +19,6 @@ import retrofit2.http.POST;
 public interface ApiServiceManager {
    public static final String Base_URL = "http://180.96.21.224:1518/SaleService/";
 
-
-
     /**
      * 登录
      * @param login
@@ -31,13 +29,5 @@ public interface ApiServiceManager {
             @Body Login login
     );
 
-    @POST("")
-    Observable<BaseData> resetPass(
-            @Body ResetPassword data
-    );
-    @POST("IdentifyingCode")
-    Observable<CodeData> getCode(
-            @Body String username
-    );
 
 }

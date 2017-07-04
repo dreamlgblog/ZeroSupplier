@@ -8,4 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Root_wm_hw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="text_17_bbb" parent="Root_wm_hw">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/gray_bbb</item>
+    </style>
+    <style name="button_24_white" parent="Root_wm_hw">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white_fff</item>
+    </style>
+
 </resources>

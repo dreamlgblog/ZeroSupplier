@@ -74,10 +74,6 @@ public class LoginActivity extends BaseActivty<ILoginView,LoginPresent<ILoginVie
         mPresent.mSubmit(login_phone.getText().toString(),login_pwd.getText().toString());
     }
 
-
-
-
-
     @Override
     public void mLoginSubmit() {
         Toast.makeText(this, "跳转到下个界面", Toast.LENGTH_SHORT).show();
@@ -113,7 +109,7 @@ public class LoginActivity extends BaseActivty<ILoginView,LoginPresent<ILoginVie
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.login_forget_password:
-                startActivity(new Intent(this,ForgetPassWordActivity.class));
+                showContent("跳转到修改密码页面");
                 break;
         }
     }

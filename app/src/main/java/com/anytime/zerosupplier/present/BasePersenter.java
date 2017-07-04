@@ -1,6 +1,12 @@
 package com.anytime.zerosupplier.present;
 
+import com.anytime.zerosupplier.bean.LoginData;
+
 import java.lang.ref.WeakReference;
+import java.util.HashMap;
+import java.util.Map;
+
+import io.reactivex.Observable;
 
 /**
  * Created by dream on 2017/6/15.
@@ -13,10 +19,11 @@ public abstract class BasePersenter<T> {
      */
     protected WeakReference<T> mViewRef;
 
+
     /**
-     * 获取数据方法
+     * 取消请求
      */
-    public abstract void fectch();
+    public abstract void unSubjectRequst();
 
     public void attachView(T view) {
         mViewRef = new WeakReference<T>(view);
@@ -30,6 +37,7 @@ public abstract class BasePersenter<T> {
         if(mViewRef!=null)
         {
             mViewRef.clear();
+            unSubjectRequst();
             mViewRef=null;
         }
     }

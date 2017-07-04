@@ -3,11 +3,10 @@ package com.anytime.zerosupplier.ui.activity;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.anytime.zerosupplier.BaseActivty;
@@ -20,8 +19,9 @@ import com.anytime.zerosupplier.utils.SettingUtils;
  * Created by dream on 2017/6/15.
  */
 
-public class LoginActivity extends BaseActivty<ILoginView,LoginPresent<ILoginView>> implements  ILoginView{
+public class LoginActivity extends BaseActivty<ILoginView,LoginPresent<ILoginView>> implements  ILoginView, View.OnClickListener {
     private EditText login_phone,login_pwd;
+    private TextView login_forget_password;
     ProgressDialog mProgress;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,8 @@ public class LoginActivity extends BaseActivty<ILoginView,LoginPresent<ILoginVie
         setContentView(R.layout.activity_login);
         login_phone = (EditText) findViewById(R.id.login_phone);
         login_pwd = (EditText) findViewById(R.id.login_pwd);
-
+        login_forget_password = (TextView) findViewById(R.id.login_forget_password);
+        login_forget_password.setOnClickListener(this);
     }
 
     @Override
@@ -106,5 +107,14 @@ public class LoginActivity extends BaseActivty<ILoginView,LoginPresent<ILoginVie
             mProgress.dismiss();
         }
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.login_forget_password:
+                startActivity(new Intent(this,ForgetPassWordActivity.class));
+                break;
+        }
     }
 }

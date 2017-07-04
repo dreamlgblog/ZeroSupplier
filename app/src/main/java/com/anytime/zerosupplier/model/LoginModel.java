@@ -2,25 +2,19 @@ package com.anytime.zerosupplier.model;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import com.anytime.zerosupplier.bean.Login;
 import com.anytime.zerosupplier.bean.LoginData;
-import com.anytime.zerosupplier.net.service.LoginService;
+import com.anytime.zerosupplier.model.AbInterface.ILoginModel;
+import com.anytime.zerosupplier.net.RetrofitClient;
+import com.anytime.zerosupplier.rxjava.HttpClienListener;
+import com.anytime.zerosupplier.rxjava.MyObserver;
 
 import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.internal.observers.BlockingBaseObserver;
 import io.reactivex.schedulers.Schedulers;
-import okhttp3.OkHttpClient;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by dream on 2017/6/15.
@@ -28,6 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginModel implements ILoginModel {
     private Login mLogin;
+    Observable<LoginData> login;
     public LoginModel(Login mLogin) {
         this.mLogin = mLogin;
     }
@@ -37,25 +32,29 @@ public class LoginModel implements ILoginModel {
     @Override
     public void submit(final OnLoginSumit onLoginSumit) {
 
+        login = new RetrofitClient().getService().login(mLogin);
 
+        login.observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new MyObserver<LoginData>(new HttpClienListener<LoginData>() {
+                    @Override
+                    public void onSuccess(@NonNull LoginData data) {
+                        onLoginSumit.onSuccess(data);
+                    }
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .client(new OkHttpClient())
-                .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl(url)
-                .build();
+                    @Override
+                    public void onError(String s) {
 
-        LoginService service = retrofit.create(LoginService.class);
-       service.login(mLogin).enqueue(new Callback<LoginData>() {
-           @Override
-           public void onResponse(Call<LoginData> call, Response<LoginData> response) {
-               onLoginSumit.onSuccess(response.body());
-           }
+                    }
+                }));
+    }
 
-           @Override
-           public void onFailure(Call<LoginData> call, Throwable t) {
-
-           }
-       });
+    /**
+     * 取消请求
+     */
+    @Override
+    public void unRequst() {
+        System.out.println("-------------------------------------------------");
+        Log.e("TAG", "unRequst: ---------------------------------------------------------------------" );
+        login.unsubscribeOn(Schedulers.io());
     }
 }
